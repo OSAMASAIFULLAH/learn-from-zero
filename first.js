@@ -1,1 +1,1 @@
-console.log("it is my new journy of learning web site development")
+console.log(" new journy of learning web site development")
