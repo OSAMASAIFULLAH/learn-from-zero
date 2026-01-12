@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Docum</title>
+</head>
+<body>
+    <h1 style="width: 50%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae laudantium repudiandae inventore quisquam reiciendis facere error mollitia consequatur dolorum autem quod itaque pariatur culpa quidem laboriosam, iusto voluptates libero magni! Magni iure, rem vitae, mollitia a ipsa itaque quisquam quia dolore, veniam pariatur vel similique repellat! Neque velit sit voluptatem provident. Velit quos voluptates, optio, dignissimos suscipit accusamus labore cum, repellendus dicta nisi voluptate? Quibusdam blanditiis quasi nobis vitae vel! Officia deleniti reprehenderit magnam perferendis animi earum, reiciendis, labore pariatur distinctio dolore veniam dignissimos consequuntur quia. Aspernatur, omnis nihil aut explicabo ea, eaque, soluta eveniet repellat officia corporis laboriosam! Quidem necessitatibus voluptatum voluptates, sit perspiciatis officiis labore? Error et minus officia quis, blanditiis suscipit quam corrupti asperiores! Fuga nihil blanditiis quasi veritatis saepe a, facilis consectetur nulla voluptates. Quibusdam nesciunt similique, quos distinctio vitae neque fugit delectus deleniti recusandae quod temporibus magni consequuntur aspernatur in ratione illo, minima dicta saepe error rem quia! Laudantium ex delectus fuga consectetur deleniti ratione aliquid quis id eaque eligendi! Autem ipsa animi maxime obcaecati esse beatae, dicta quaerat eius quibusdam odit, officiis repellendus voluptate delectus. Commodi voluptas aut possimus, ipsa quibusdam nobis? Atque quis eos labore, animi distinctio perferendis! Repudiandae ipsa voluptates officiis, ducimus rerum accusamus cupiditate quaerat. Eaque, illo in dolor suscipit ad minus minima fugit commodi fugiat, earum officiis? Vero hic ex sint architecto fugit explicabo ut necessitatibus autem cumque? Suscipit, dicta. A perspiciatis vero sed nostrum pariatur dignissimos minus consectetur inventore ea tempora? Alias, totam laboriosam rerum ea sapiente blanditiis quasi quas quod sed repellendus dolorem odit, repellat provident numquam deleniti fuga distinctio, quo id delectus harum pariatur repudiandae facere incidunt. Eaque enim dolores, ex possimus eligendi, reprehenderit ea velit laudantium, earum tempore unde consectetur in! Eum cum provident, nesciunt dolorum quibusdam mollitia similique ratione sunt nobis molestiae iure temporibus beatae modi recusandae odio dolor natus repudiandae. Dolorum culpa a asperiores alias facilis exercitationem quia, quos assumenda accusantium aut recusandae necessitatibus maiores? Reiciendis, iusto. Vero nesciunt ullam eum, enim deserunt, modi quo iste nemo laboriosam necessitatibus ipsa inventore voluptatibus, eos quia delectus porro culpa. Est veritatis velit cupiditate optio, maxime tempora vero, libero molestiae commodi excepturi at soluta nobis officiis eius nam dolorem cumque illo eum sequi facilis natus necessitatibus quae quibusdam. Eaque voluptatem aliquid porro labore at saepe nemo consequatur ea sit ducimus voluptatum iusto magnam corporis, laboriosam temporibus a maiores? Porro soluta obcaecati animi. Deleniti ipsa repellendus eum doloribus.</h1>
+    <script>
+        function throttle(func,limit){
+        let inthrottle=false
+      return function(...arg){
+             const event = arg[0]; // first argument is the event object
+    console.log("Event type:", event);
+            if(!inthrottle){
+                func.apply(this,arg);
+                inthrottle=true
+                setTimeout(()=>inthrottle=false,limit)
+            }
+        }
+        }
+        function onscroll(){
+            console.log("you scroll it", new Date().toLocaleTimeString());
+        }
+        window.addEventListener('scroll',()=>{setTimeout(()=>{
+            console.log("you are scroll")
+        },1000)})
+    </script>
+</body>
+</html>
